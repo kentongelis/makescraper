@@ -9,14 +9,26 @@ import (
 	"github.com/gocolly/colly"
 )
 
+// Player struct holds the fields scraped from a squad table row
+type Player struct {
+	Number   string
+	Name     string
+	Nation   string
+	Position string
+	DOB      string
+}
+
 // Helper function to strip Wikipedia's footnote and annotation markups
 func cleanName(s string) string {
 	re := regexp.MustCompile(`[\*†#◊]|\(.*?\)|\[.*?\]`)
 	return strings.TrimSpace(re.ReplaceAllString(s, ""))
 }
 
-// Function that scrapes data from given wikipedia team site
-func scrape(link string) {
+// Function that scrapes data from given wikipedia team site and returns the collected players
+func scrape(link string) []Player {
+	// Slice to collect players as we find them
+	var players []Player
+
 	// Initialize colly
 	c := colly.NewCollector(
 		colly.AllowedDomains("en.wikipedia.org"),
@@ -44,15 +56,14 @@ func scrape(link string) {
 				return
 			}
 
-			// Pull out the fields we care about by column position
-			number := cells[0]
-			player := cleanName(cells[1])
-			nation := cells[2]
-			position := cells[3]
-			dob := cells[4]
-
-			// Print link found
-			fmt.Printf("#%s | %s | %s | %s | %s\n", number, player, nation, position, dob)
+			// Build a Player from the row and append it to our results
+			players = append(players, Player{
+				Number:   cells[0],
+				Name:     cleanName(cells[1]),
+				Nation:   cells[2],
+				Position: cells[3],
+				DOB:      cells[4],
+			})
 		})
 	})
 
@@ -61,8 +72,18 @@ func scrape(link string) {
 	})
 
 	c.Visit(link)
+
+	return players
+}
+
+// Print out every player in given splice
+func printPlayers(players []Player) {
+	for _, p := range players {
+		fmt.Printf("#%s | %s | %s | %s | %s\n", p.Number, p.Name, p.Nation, p.Position, p.DOB)
+	}
 }
 
 func main() {
-	scrape("https://en.wikipedia.org/wiki/2024%E2%80%9325_Arsenal_F.C._season")
+	players := scrape("https://en.wikipedia.org/wiki/2024%E2%80%9325_Arsenal_F.C._season")
+	printPlayers(players)
 }
