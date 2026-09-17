@@ -1,0 +1,198 @@
+[
+  {
+    "number": "22",
+    "name": "David Raya",
+    "nation": "ESP",
+    "position": "GK (R)",
+    "dob": "15 Sep 1995(aged 29)"
+  },
+  {
+    "number": "32",
+    "name": "Neto",
+    "nation": "BRA",
+    "position": "GK (R)",
+    "dob": "19 Jul 1989(aged 35)"
+  },
+  {
+    "number": "2",
+    "name": "William Saliba",
+    "nation": "FRA",
+    "position": "CB (R)",
+    "dob": "24 Mar 2001(aged 24)"
+  },
+  {
+    "number": "3",
+    "name": "Kieran Tierney",
+    "nation": "SCO",
+    "position": "LB / LWB / LW / CB (L)",
+    "dob": "5 Jun 1997(aged 28)"
+  },
+  {
+    "number": "4",
+    "name": "Ben White",
+    "nation": "ENG",
+    "position": "RB[c] / CB (R)",
+    "dob": "8 Oct 1997(aged 27)"
+  },
+  {
+    "number": "6",
+    "name": "Gabriel Magalhães",
+    "nation": "BRA",
+    "position": "CB (L)",
+    "dob": "19 Dec 1997(aged 27)"
+  },
+  {
+    "number": "12",
+    "name": "Jurriën Timber",
+    "nation": "NED",
+    "position": "RB[c] / LB[d] / CB (R)",
+    "dob": "17 Jun 2001(aged 24)"
+  },
+  {
+    "number": "15",
+    "name": "Jakub Kiwior",
+    "nation": "POL",
+    "position": "CB / LB[d] (L)",
+    "dob": "15 Feb 2000(aged 25)"
+  },
+  {
+    "number": "17",
+    "name": "Oleksandr Zinchenko",
+    "nation": "UKR",
+    "position": "LB[d] / CM (L)",
+    "dob": "15 Dec 1996(aged 28)"
+  },
+  {
+    "number": "18",
+    "name": "Takehiro Tomiyasu",
+    "nation": "JPN",
+    "position": "RB / LB[d] / CB (R)",
+    "dob": "5 Nov 1998(aged 26)"
+  },
+  {
+    "number": "33",
+    "name": "Riccardo Calafiori",
+    "nation": "ITA",
+    "position": "LB[d] / CB / RB[c] (L)",
+    "dob": "19 May 2002(aged 23)"
+  },
+  {
+    "number": "5",
+    "name": "Thomas Partey",
+    "nation": "GHA",
+    "position": "DM / CM / RB[c] (R)",
+    "dob": "13 Jun 1993(aged 32)"
+  },
+  {
+    "number": "8",
+    "name": "Martin Ødegaard",
+    "nation": "NOR",
+    "position": "AM / CM (L)",
+    "dob": "17 Dec 1998(aged 26)"
+  },
+  {
+    "number": "20",
+    "name": "Jorginho",
+    "nation": "ITA",
+    "position": "DM / CM (R)",
+    "dob": "20 Dec 1991(aged 33)"
+  },
+  {
+    "number": "23",
+    "name": "Mikel Merino",
+    "nation": "ESP",
+    "position": "CM / AM / ST (L)",
+    "dob": "22 Jun 1996(aged 29)"
+  },
+  {
+    "number": "41",
+    "name": "Declan Rice",
+    "nation": "ENG",
+    "position": "CM / DM / CB (R)",
+    "dob": "14 Jan 1999(aged 26)"
+  },
+  {
+    "number": "7",
+    "name": "Bukayo Saka",
+    "nation": "ENG",
+    "position": "RW / LB (L)",
+    "dob": "5 Sep 2001(aged 23)"
+  },
+  {
+    "number": "9",
+    "name": "Gabriel Jesus",
+    "nation": "BRA",
+    "position": "ST / LW / RW (R)",
+    "dob": "3 Apr 1997(aged 28)"
+  },
+  {
+    "number": "11",
+    "name": "Gabriel Martinelli",
+    "nation": "BRA",
+    "position": "LW / ST / RW (R)",
+    "dob": "18 Jun 2001(aged 24)"
+  },
+  {
+    "number": "19",
+    "name": "Leandro Trossard",
+    "nation": "BEL",
+    "position": "LW / ST / AM (R)",
+    "dob": "4 Dec 1994(aged 30)"
+  },
+  {
+    "number": "29",
+    "name": "Kai Havertz",
+    "nation": "GER",
+    "position": "ST / AM (L)",
+    "dob": "11 Jun 1999(aged 26)"
+  },
+  {
+    "number": "30",
+    "name": "Raheem Sterling",
+    "nation": "ENG",
+    "position": "RW / LW / ST (R)",
+    "dob": "8 Dec 1994(aged 30)"
+  },
+  {
+    "number": "21",
+    "name": "Fábio Vieira",
+    "nation": "POR",
+    "position": "AM / RW (L)",
+    "dob": "30 May 2000(aged 25)"
+  },
+  {
+    "number": "24",
+    "name": "Reiss Nelson",
+    "nation": "ENG",
+    "position": "RW / LW (R)",
+    "dob": "10 Dec 1999(aged 25)"
+  },
+  {
+    "number": "27",
+    "name": "Marquinhos",
+    "nation": "BRA",
+    "position": "RW (L)",
+    "dob": "7 Apr 2003(aged 22)"
+  },
+  {
+    "number": "31",
+    "name": "Karl Hein",
+    "nation": "EST",
+    "position": "GK (R)",
+    "dob": "13 Apr 2002(aged 23)"
+  },
+  {
+    "number": "—",
+    "name": "Albert Sambi Lokonga",
+    "nation": "BEL",
+    "position": "CM (R)",
+    "dob": "22 Oct 1999(aged 25)"
+  },
+  {
+    "number": "—",
+    "name": "Nuno Tavares",
+    "nation": "POR",
+    "position": "LB / LWB (L)",
+    "dob": "26 Jan 2000(aged 25)"
+  }
+]

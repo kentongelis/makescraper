@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 	"regexp"
 	"strings"
 
@@ -11,17 +13,24 @@ import (
 
 // Player struct holds the fields scraped from a squad table row
 type Player struct {
-	Number   string
-	Name     string
-	Nation   string
-	Position string
-	DOB      string
+	Number   string `json:"number"`
+	Name     string `json:"name"`
+	Nation   string `json:"nation"`
+	Position string `json:"position"`
+	DOB      string `json:"dob"`
 }
 
 // Helper function to strip Wikipedia's footnote and annotation markups
 func cleanName(s string) string {
 	re := regexp.MustCompile(`[\*†#◊]|\(.*?\)|\[.*?\]`)
 	return strings.TrimSpace(re.ReplaceAllString(s, ""))
+}
+
+// Error handling helper function
+func panicHelper(err error) {
+	if err != nil {
+		panic(err)
+	}
 }
 
 // Function that scrapes data from given wikipedia team site and returns the collected players
@@ -83,7 +92,17 @@ func printPlayers(players []Player) {
 	}
 }
 
+func saveDataToJSON(players []Player) {
+	playersJSON, err := json.MarshalIndent(players, "", "  ")
+	panicHelper(err)
+	fmt.Print(string(playersJSON))
+
+	err = os.WriteFile("output.json", playersJSON, 0644)
+	panicHelper(err)
+}
+
 func main() {
 	players := scrape("https://en.wikipedia.org/wiki/2024%E2%80%9325_Arsenal_F.C._season")
 	printPlayers(players)
+	saveDataToJSON(players)
 }
