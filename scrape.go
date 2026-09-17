@@ -92,6 +92,7 @@ func printPlayers(players []Player) {
 	}
 }
 
+// Function to serialize and save scraped data to JSON
 func saveDataToJSON(players []Player) {
 	playersJSON, err := json.MarshalIndent(players, "", "  ")
 	panicHelper(err)
